@@ -8,7 +8,7 @@ body{
 
 header {
   background-color: white;
-  height: 80px;
+  height: 8vh;
   position: fixed;
   top: 0;
   left: 0;
@@ -92,13 +92,36 @@ nav button:hover {
   margin-bottom: 60px;
 }
 
+.accounts .tooltip {
+  visibility: hidden;
+  width: 150px;
+  font-size: 1rem;
+  z-index: 1;
+  position: absolute;
+  left: 105%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 5vw;
+  opacity: 0;
+  transition: opacity 0.3s;
+  padding: 4px 6px 4px 6px;
+}
+
+.accounts:hover .tooltip {
+  visibility: visible;
+  opacity: .75;
+}
+
 .intro {
   display: grid;
   text-align: center;
-  padding: 250px 100px 0 100px;
+  padding: 20vh 10vw 0 10vw;
+  margin-bottom: 25vh;
 }
 
 .intro-p {
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 5rem;
+  
 }
